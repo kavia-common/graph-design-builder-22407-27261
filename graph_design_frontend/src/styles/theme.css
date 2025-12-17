@@ -1,0 +1,39 @@
+:root {
+  /* Canvas and surfaces */
+  --bg-canvas: #F6F9FC;
+  --surface: #FFFFFF;
+  --surface-border: #E5E7EB;
+  --shadow-soft: 0 2px 8px rgba(16, 24, 40, 0.08);
+
+  /* Text */
+  --text-primary: #1F2937;
+  --text-secondary: #374151;
+  --text-tertiary: #6B7280;
+  --link: #3B82F6;
+
+  /* Series Colors */
+  --series-ap-schedule: #2563EB;
+  --series-ap-strain: #F59E0B;
+  --series-ap-shearstrain: #10B981;
+  --series-ap-tschedule: #06B6D4;
+  --series-ap-tstrain: #8B5CF6;
+
+  --series-post-ap-schedule: #60A5FA;
+  --series-post-ap-shearstrain: #34D399;
+  --series-post-ap-tschedule: #38BDF8;
+  --series-post-ap-tshearstrain: #A78BFA;
+
+  --series-hr: #EF4444;
+  --series-rr: #9333EA;
+  --series-spo2: #EC4899;
+  --series-lvp: #1F2937;
+  --series-temp: #FB923C;
+}
+
+/* Ocean Professional baseline */
+html, body, #root {
+  height: 100%;
+  background: var(--bg-canvas);
+  color: var(--text-secondary);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}

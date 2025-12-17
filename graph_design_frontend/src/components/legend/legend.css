@@ -1,0 +1,114 @@
+.plot-card {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  padding: 16px;
+}
+
+.plot-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.legend-panel {
+  background: var(--surface);
+}
+
+.legend-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.legend-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.reset-link {
+  background: none;
+  border: none;
+  color: var(--link);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.reset-link:hover { text-decoration: underline; }
+
+.legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legend-row {}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 0;
+  padding: 2px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 160ms ease;
+  outline-offset: 2px;
+}
+
+.legend-item:hover,
+.legend-item[aria-checked="true"] {
+  color: #111827;
+}
+
+.legend-item[aria-checked="false"] {
+  color: #9CA3AF;
+}
+
+.legend-item:focus-visible {
+  outline: 2px solid #3B82F6;
+}
+
+.marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.marker.square { border-radius: 2px; }
+
+.legend-note {
+  margin-top: 12px;
+  color: var(--text-tertiary);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Plot area container styling aligned with notes */
+.plot-area {
+  position: relative;
+  border: 1px solid var(--surface-border);
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 320px;
+  background: var(--surface);
+}
+
+/* Responsive behavior */
+@media (max-width: 640px) {
+  .plot-grid {
+    grid-template-columns: 1fr;
+  }
+}
